@@ -5,7 +5,6 @@
  */
 package leftedge;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Enumeration;
 import javax.swing.*;
 /**
@@ -14,7 +13,6 @@ import javax.swing.*;
  */
 public class ChannelRouter extends JPanel{
    private NetList nl;
-  public ChannelRouter() {}
   public ChannelRouter(NetList n) { nl = n;}
 
   private static final int BORDER_Y_OFFSET = 10;

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package leftedge;
-import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 /**
@@ -86,8 +85,8 @@ public class LeftEdgeUI extends javax.swing.JFrame {
         jPanel1 = new ChannelRouter(nl);
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        about = new javax.swing.JMenuItem();
+        exit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,20 +117,25 @@ public class LeftEdgeUI extends javax.swing.JFrame {
             .addGap(0, 288, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("File");
+        jMenu1.setText("Menu");
 
-        jMenuItem1.setText("About");
-        jMenuItem1.setToolTipText("");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        about.setText("About");
+        about.setToolTipText("");
+        about.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                aboutActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
-        jMenuItem1.getAccessibleContext().setAccessibleName("jMenuItem1");
+        jMenu1.add(about);
+        about.getAccessibleContext().setAccessibleName("jMenuItem1");
 
-        jMenuItem2.setText("Exit");
-        jMenu1.add(jMenuItem2);
+        exit.setText("Exit");
+        exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitActionPerformed(evt);
+            }
+        });
+        jMenu1.add(exit);
 
         jMenuBar1.add(jMenu1);
 
@@ -237,9 +241,9 @@ public class LeftEdgeUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_aboutActionPerformed
     //clear all net fields//
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
         // TODO add your handling code here:
@@ -256,6 +260,11 @@ public class LeftEdgeUI extends javax.swing.JFrame {
         scanFieldsAndRoute();
         jPanel1.repaint();
     }//GEN-LAST:event_routeButtonActionPerformed
+
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+        // TODO add your handling code here:
+         System.exit(0);
+    }//GEN-LAST:event_exitActionPerformed
 
     /** Scan the terminal fields for each column and build up the netlist data structure*/ 
   private void scanFieldsAndRoute() {
@@ -323,11 +332,11 @@ public static void main(String[] args) {
     private javax.swing.JTextField Text7;
     private javax.swing.JTextField Text8;
     private javax.swing.JTextField Text9;
+    private javax.swing.JMenuItem about;
     private javax.swing.JButton clearButton;
+    private javax.swing.JMenuItem exit;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton routeButton;
     // End of variables declaration//GEN-END:variables
