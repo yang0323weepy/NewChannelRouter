@@ -48,6 +48,7 @@ public class NetList {
       }
     }
     nlist.addElement(n);
+    System.out.println("add");
   }
   
   void unmarkNets() {
