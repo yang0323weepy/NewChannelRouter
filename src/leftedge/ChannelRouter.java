@@ -29,9 +29,6 @@ public class ChannelRouter extends JPanel{
     trackHeight = (d.height - HEIGHT_ADJUST - BORDER_Y_OFFSET) / (nl.getMaxTrack() + 1);
   }
 
-  
-
-
   /** @return the Y coordinate for track number. */
   public int trackY(int track) {
     return BORDER_Y_OFFSET + trackHeight * track;
