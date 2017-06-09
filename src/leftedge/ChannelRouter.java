@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author yangy
  */
 public class ChannelRouter extends JPanel{
-   private NetList nl;
+  private NetList nl;
   public ChannelRouter(NetList n) { nl = n;}
 
   private static final int BORDER_Y_OFFSET = 10;
