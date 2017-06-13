@@ -17,6 +17,7 @@ public class ChannelRouter extends JPanel{
   //constructor
   public ChannelRouter(NetList n) { nl = n;}
 
+  //try commit number
   private static final int BORDER_Y_OFFSET = 10;
   private static final int HEIGHT_ADJUST = 10;
   private static final int WIDTH_ADJUST = 1;
