@@ -14,6 +14,7 @@ import javax.swing.*;
 //add channel router
 public class ChannelRouter extends JPanel{
   private NetList nl;
+  //constructor
   public ChannelRouter(NetList n) { nl = n;}
 
   private static final int BORDER_Y_OFFSET = 10;
