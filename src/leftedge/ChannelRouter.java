@@ -11,6 +11,7 @@ import javax.swing.*;
  *
  * @author yangy
  */
+//add channel router
 public class ChannelRouter extends JPanel{
   private NetList nl;
   public ChannelRouter(NetList n) { nl = n;}

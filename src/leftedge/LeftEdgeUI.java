@@ -99,11 +99,6 @@ public class LeftEdgeUI extends javax.swing.JFrame {
         Text4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         Text5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Text5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Text5ActionPerformed(evt);
-            }
-        });
 
         Text6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -318,10 +313,6 @@ public class LeftEdgeUI extends javax.swing.JFrame {
         // TODO add your handling code here:
          System.exit(0);
     }//GEN-LAST:event_exitActionPerformed
-
-    private void Text5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Text5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Text5ActionPerformed
 
     /** Scan the terminal fields for each column and build up the netlist data structure*/ 
   private void scanFieldsAndRoute() {
